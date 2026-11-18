@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The China-trip language stack: a practical comparison matrix</title>
+<meta name="description" content="A capability matrix of language, translation, and travel apps for a two-week China trip — offline behavior, mainland reachability, price model, and the honest limits of each.">
+<style>
+  :root { --text:#1f2329; --muted:#646a73; --line:#e5e6eb; --bg:#f7f8fa; --accent:#2b5aed; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+  main { max-width:820px; margin:0 auto; padding:48px 20px 80px; }
+  article { background:#fff; border:1px solid var(--line); border-radius:12px; padding:40px 44px; }
+  h1 { font-size:30px; line-height:1.3; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin-bottom:28px; }
+  .disclosure { background:#eef2ff; border-left:3px solid var(--accent); padding:10px 14px; font-size:14px; color:#35425e; border-radius:0 8px 8px 0; }
+  h2 { font-size:21px; margin:36px 0 12px; }
+  p { margin:0 0 14px; }
+  ul, ol { margin:0 0 16px; padding-left:24px; }
+  li { margin:4px 0; }
+  .tablewrap { overflow-x:auto; border:1px solid var(--line); border-radius:10px; margin:16px 0 24px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; min-width:860px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--bg); font-weight:600; font-size:12.5px; color:var(--muted); }
+  tr:last-child td { border-bottom:none; }
+  code { font-family:"SF Mono", Menlo, Consolas, monospace; font-size:13px; background:var(--bg); padding:1px 5px; border-radius:4px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .checklist { list-style:none; padding-left:0; }
+  .checklist li { position:relative; padding:6px 0 6px 30px; }
+  .checklist li::before { content:"☐"; position:absolute; left:4px; top:4px; font-size:18px; color:var(--muted); }
+  footer { color:var(--muted); font-size:13px; margin-top:32px; border-top:1px solid var(--line); padding-top:16px; }
+  @media (max-width:640px) { article { padding:24px 18px; } h1 { font-size:24px; } }
+</style>
+</head>
+<body>
+<main>
+<article>
+  <h1>The China-trip language stack: a practical comparison matrix</h1>
+  <p class="meta">Updated November 2026 · ~9 min read</p>
+  <p class="disclosure"><strong>Disclosure:</strong> FlyTalk (the app in the last row) is built by us. Everything below is verifiable in the stores; where a claim depends on the network, it's marked as such.</p>
+
+  <p>Most "best Chinese apps" lists compare apps by category. That's the wrong axis for a short trip. The useful axis is <strong>which failure each app prevents</strong>:</p>
+  <ol>
+    <li><em>I can't say it.</em> → speaking tools</li>
+    <li><em>I can't understand the answer.</em> → listening and reply-training tools</li>
+    <li><em>I can't read it.</em> → translation and OCR tools</li>
+    <li><em>I can't pay / get there.</em> → logistics apps</li>
+  </ol>
+  <p>An app is worth installing only if it covers a failure you'll plausibly hit. Below is the matrix as of late 2026, followed by an install-day checklist.</p>
+
+  <h2>Comparison matrix</h2>
+  <div class="tablewrap">
+  <table>
+    <thead>
+      <tr><th>App</th><th>Best at</th><th>Offline behavior</th><th>Mainland-China network</th><th>Price model</th><th>Honest limitation</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Duolingo</strong></td><td>Habit formation, general vocab</td><td>Limited; lessons need sync</td><td>Generally reachable, but not built for China</td><td>Free tier + subscription</td><td>Curriculum order, not trip order; months to travel-useful</td></tr>
+      <tr><td><strong>HelloChinese</strong></td><td>Structured Mandarin course, speech checks</td><td>Partial</td><td>Generally reachable</td><td>Free tier + subscription</td><td>Mandarin only; travel chapters come late</td></tr>
+      <tr><td><strong>Pleco</strong></td><td>Dictionary, OCR, flashcards</td><td>Dictionary works offline; OCR add-on</td><td>Generally reachable</td><td>Free core; paid add-ons</td><td>Reference tool, not a speaking trainer</td></tr>
+      <tr><td><strong>Memrise</strong></td><td>Native-speaker video, SRS</td><td>Limited offline</td><td>Generally reachable</td><td>Free tier + subscription</td><td>General curricula; you won't finish in 2 weeks</td></tr>
+      <tr><td><strong>Anki</strong></td><td>Spaced repetition, custom decks</td><td>Fully offline</td><td>Generally reachable</td><td>Free (desktop/Android); paid on iOS</td><td>You must supply or find the right deck</td></tr>
+      <tr><td><strong>Google Translate</strong></td><td>Camera/live translation, conversation mode</td><td>Downloadable offline packs</td><td><strong>Not reachable without a VPN</strong></td><td>Free</td><td>Live features depend on network; offline quality thin on colloquial speech</td></tr>
+      <tr><td><strong>Microsoft Translator</strong></td><td>Offline conversation, photo translation</td><td>Neural offline packs, genuinely usable</td><td>Reachable</td><td>Free</td><td>Smaller ecosystem; less polished UI</td></tr>
+      <tr><td><strong>Baidu Translate</strong></td><td>Domestic-network translation, Chinese-first UI</td><td>Partial offline support</td><td>Built for it</td><td>Free</td><td>UI assumes Chinese literacy; variable English quality</td></tr>
+      <tr><td><strong>FlyTalk</strong></td><td>Speaking survival: ask→listen→respond scenes, big-text emergency, pre-recorded audio</td><td>Full: 50–100 MB per-language pack, every phrase pre-recorded, works in flight mode</td><td>Fully usable offline; AI features need a connection</td><td>Cards + flight mode free; AI practice via one-time 14/30/90/365-day passes</td><td>Deliberately shallow — a 3–14 day survival kit, not a course; AI scoring covers Chinese/English/Japanese/Korean</td></tr>
+      <tr><td><strong>Alipay</strong></td><td>Payments (QR everywhere)</td><td>—</td><td>Required in practice</td><td>Free</td><td>Tourist payment setup is fiddly; do it before flying</td></tr>
+      <tr><td><strong>WeChat</strong></td><td>Messaging, second payment rail</td><td>—</td><td>Required in practice</td><td>Free</td><td>Limited English; mini-programs are overwhelming</td></tr>
+      <tr><td><strong>DiDi</strong></td><td>Ride-hailing with English mode</td><td>—</td><td>Required in practice</td><td>Free; ride costs</td><td>Address entry still benefits from Chinese text</td></tr>
+      <tr><td><strong>Trip.com</strong></td><td>Trains, flights, hotels in English</td><td>—</td><td>Works</td><td>Free; booking costs</td><td>Support quality varies by channel</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Two clarifications that trip people up:</p>
+  <ul>
+    <li><strong>"Offline" means different things.</strong> Google Translate's offline packs translate text and photos; Microsoft's packs support conversation; FlyTalk's packs play every phrase as pre-recorded audio with no model download at runtime. Check what actually survives airplane mode for your specific app.</li>
+    <li><strong>Network reachability is a first-class criterion in China.</strong> An app that's excellent and unreachable is a party trick. Microsoft Translator and Baidu Translate are the two translation options that don't degrade the moment you land.</li>
+  </ul>
+
+  <h2>What each app prevents, in one line</h2>
+  <ul>
+    <li>Duolingo / HelloChinese / Memrise / Anki — prevent <em>having no foundation at all</em>; useful only with weeks of runway.</li>
+    <li>Pleco — prevents <em>not being able to look anything up</em>; keep it installed forever.</li>
+    <li>Google / Microsoft / Baidu Translate — prevent <em>not being able to read</em>; pick one that works where you're going.</li>
+    <li>FlyTalk — prevents <em>freezing when someone answers you</em>; the only one of the set built around the reply rather than the request.</li>
+    <li>Alipay / WeChat / DiDi / Trip.com — prevent the trip from stalling on logistics, which is where a phrase and an app get used in the same minute.</li>
+  </ul>
+
+  <h2>Install-day checklist</h2>
+  <p>Before the flight, on hotel or home Wi-Fi:</p>
+  <ul class="checklist">
+    <li>Download your translation app's offline language packs (Microsoft for both text and conversation; Google only if you have a VPN plan).</li>
+    <li>Download the FlyTalk offline voice pack for Chinese; open one scene in flight mode to confirm audio plays.</li>
+    <li>Complete the tourist payment setup in Alipay with a foreign card before departure; test one small payment.</li>
+    <li>Install DiDi and Trip.com, and sign in once while you have signal.</li>
+    <li>Put the big-text emergency screen one tap away; find the pharmacy and allergen icons ahead of time.</li>
+    <li>Save two sentences you'll say most: "Please wait a moment" and "I don't understand — please speak slower."</li>
+  </ul>
+
+  <p>If the trip is two weeks out, stop here: a course will not land in time, and the survival kit plus one offline translator covers nearly everything else. If you have three months, run Duolingo or HelloChinese for the foundation and still do this checklist — the checklist is about the trip going right, not about how much Chinese you know.</p>
+
+  <p>FlyTalk is on the <a href="https://flytalk.app" rel="noopener">App Store and Google Play</a>, and the scene pages — including a full <a href="https://web.flytalk.app/en/zh/scenes/survival-chinese" rel="noopener">survival-Chinese scene</a> — are readable in the browser before you install anything.</p>
+
+  <footer>
+    Corrections welcome — open an issue or email hello@flytalk.app. If an app changes its offline behavior or mainland reachability, this table should be updated, not reprinted.
+  </footer>
+</article>
+</main>
+</body>
+</html>
